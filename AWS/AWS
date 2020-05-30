@@ -1,0 +1,41 @@
+Cloud - IaaS
+
+Public Cloud - AWS
+
+Data Center is also known as availability zone(AZ).
+------------------------
+Cloud uses Multi-tenancy
+Namespaces concept is used, which gives tenants the feel they are the owner of the resources.
+
+Computer As A Service (CaaS)
+Elastic Compute Cloud - EC2 - can get RAM, CPU
+
+Storage (Data Persistent)-
+1. Object
+2. File
+3. Block
+
+Block Storage- is Like HDD, Pendrive.
+Storage As A Service / Block Storage As A Service
+
+Elastic Block Storage (EBS) - analogy, pendrive on the cloud.
+EBS is a sub service
+
+Network As A Service - VPC - Virtual Private Cloud
+
+Setup and booting the OS - OS Provisioning
+On Laptop its known as OS
+On Cloud its known as Instance/VM/OS
+
+Network Interface Card
+Elastic Network Interfaces (ENI)
+Bootable Images - Amazon Machine Image (AMI)
+
+
+OS Launch
+Step1: Create Security Key
+Step2: Launch OS - EC2
+EC2 -Ram & CPU but Subservice is EBS
+
+--------------------------------------------
+

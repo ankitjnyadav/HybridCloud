@@ -39,3 +39,72 @@ EC2 -Ram & CPU but Subservice is EBS
 
 --------------------------------------------
 
+AWS CLI
+
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+-------------
+aws configure
+-------------
+AWS Access Key ID [None]:
+AWS Secret Access Key [None]:
+Default region name [None]:
+Default output format [None]:
+-------------
+
+To Stop an instance
+-------------
+aws ec2 stop-instances --instance-ids <instance-id>
+-------------
+
+To get all the instances:
+-------------
+aws ec2 describe-instances
+-------------
+aws ec2 describe-key-pairs --query
+
+
+run-instances
+          [--block-device-mappings <value>]
+          [--image-id <value>]
+          [--instance-type <value>]
+          [--ipv6-address-count <value>]
+          [--ipv6-addresses <value>]
+          [--kernel-id <value>]
+          [--key-name <value>]
+          [--monitoring <value>]
+          [--placement <value>]
+          [--ramdisk-id <value>]
+          [--security-group-ids <value>]
+          [--security-groups <value>]
+          [--subnet-id <value>]
+          [--user-data <value>]
+          [--additional-info <value>]
+          [--client-token <value>]
+          [--disable-api-termination | --enable-api-termination]
+          [--dry-run | --no-dry-run]
+          [--ebs-optimized | --no-ebs-optimized]
+          [--iam-instance-profile <value>]
+          [--instance-initiated-shutdown-behavior <value>]
+          [--network-interfaces <value>]
+          [--private-ip-address <value>]
+           [--elastic-gpu-specification <value>]
+          [--elastic-inference-accelerators <value>]
+          [--tag-specifications <value>]
+          [--launch-template <value>]
+          [--instance-market-options <value>]
+          [--credit-specification <value>]
+          [--cpu-options <value>]
+          [--capacity-reservation-specification <value>]
+          [--hibernation-options <value>]
+          [--license-specifications <value>]
+          [--metadata-options <value>]
+          [--count <value>]
+          [--secondary-private-ip-addresses <value>]
+          [--secondary-private-ip-address-count <value>]
+          [--associate-public-ip-address | --no-associate-public-ip-address]
+          [--cli-input-json | --cli-input-yaml]
+          [--generate-cli-skeleton <value>]
+          [--cli-auto-prompt <value>]
+

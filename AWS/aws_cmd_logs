@@ -1,0 +1,46 @@
+1990  aws
+ 1991  aws configure
+ 1992  aws configure
+ 1993  aws ec2 describe
+ 1994  aws ec2 describe-instances
+ 1995  OAq
+ 1996  q
+ 1997  aws ec2 stop-instances --instance-ids
+ 1998  aws ec2 stop-instances
+ 1999  aws ec2 describe-key-pairs
+ 2000  aws ec2 create-ket-pairs
+ 2001  aws ec2 create-ket-pair
+ 2002  aws ec2 create-key-pair
+ 2003  aws ec2 create-key-pair --key-name aws_cli_key
+ 2004  cd Documents/
+ 2005  cat > aws_cli_key.ppk
+ 2006  cat aws_cli_key.ppk
+ 2007  aws ec2 describe-key-pairs --query KeyPairs
+ 2008  aws ec2 describe-key-pairs --query KeyPairs[0]
+ 2009  aws ec2 describe-key-pairs --query KeyPairs[0].KeyPairId
+ 2010  aws ec2 describe-instances
+ 2011  aws ec2 describe-instances --query Reservations[0].Instances[0].PublicIpAddress
+ 2012  aws ec2 describe-instances
+ 2013  aws ec2 describe-instances --query Reservations[0].Instances[0].PrivateIpAddress
+ 2014  aws ec2 describe-instances
+ 2015  aws ec2 describe-instances --query Reservations[0].Instances[0].PrivateIpAddress,KeyName
+ 2016  aws ec2 describe-instances --query Reservations[0].Instances[0].[PrivateIpAddress,KeyName]
+ 2017  cd ..
+ 2018  cd Downloads/
+ 2019  aws ec2 describe-instances --query Reservations[0].Instances[0].[PrivateIpAddress,KeyName]
+ 2020  ssh -i keycloudclass.ppk -l ec2-user 172.31.12.75
+ 2021  aws ec2 describe-instances --query Reservations[*].Instances[0].[PrivateIpAddress,KeyName]
+ 2022  aws ec2 describe-instances --query Reservations[*].Instances[0].[PrivateIpAddress,KeyName,tags]
+ 2023  aws ec2 describe-instances --query Reservations[*].Instances[0].[PrivateIpAddress,KeyName,Tags]
+ 2024  aws ec2 describe-instances --query Reservations[*].Instances[0].[PrivateIpAddress,KeyName,Tags.Value]
+ 2025  aws ec2 describe-instances --query Reservations[*].Instances[0].[PrivateIpAddress,KeyName,Tags[0].Value]
+ 2026  aws ec2 describe-instances --query Reservations[*].Instances[0].[PublicIpAddress,KeyName,Tags[0].Value]
+ 2027  ssh -l ec2-user -i keycloudclass.ppk 52.66.241.6
+ 2028  aws ec2 stop-instances help
+ 2029  aws ec2 describe-instances --query Reservations[*].Instances[*]
+ 2030  aws ec2 describe-instances --query Reservations[*].Instances[*].InstanceId
+ 2031  aws ec2 describe-instances --query Reservations[*].Instances[*].[InstanceId,Name]
+ 2032  aws ec2 describe-instances --query Reservations[*].Instances[*].InstanceId
+ 2033  aws ec2 stop-instances i-01978d86624e1d987
+ 2034  aws ec2 stop-instances --instance-ids i-01978d86624e1d987
+ 2035  aws ec2 stop-instances --instance-ids i-029062746da8f4356

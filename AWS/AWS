@@ -108,3 +108,16 @@ run-instances
           [--generate-cli-skeleton <value>]
           [--cli-auto-prompt <value>]
 
+-----------------------------------------------------------
+ami-0447a12f28fddb066
+
+
+aws ec2 run-instances
+--image-id ami-0447a12f28fddb066
+--instance-type t2.micro
+--count 1
+--subnet-id subnet-183f5454
+--security-groups sg-0173329149b94c49f
+--key-name keycloudclass
+
+aws ec2 run-instances --image-id ami-0447a12f28fddb066 --instance-type t2.micro --count 1 --subnet-id subnet-183f5454 --security-groups-ids sg-0173329149b94c49f --key-name keycloudclass

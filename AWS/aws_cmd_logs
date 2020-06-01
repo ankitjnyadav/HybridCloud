@@ -44,3 +44,9 @@
  2033  aws ec2 stop-instances i-01978d86624e1d987
  2034  aws ec2 stop-instances --instance-ids i-01978d86624e1d987
  2035  aws ec2 stop-instances --instance-ids i-029062746da8f4356
+ 1001  aws cloudtrail help
+ 1002  aws cloudtrail lookup-events help
+ 1003  aws cloudtrail lookup-events --query "Events[0]"
+ 1004  aws ec2 describe-instances
+ 1005  aws ec2 ebs
+ 1006  aws ec2 ebs help

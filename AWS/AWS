@@ -121,3 +121,23 @@ aws ec2 run-instances
 --key-name keycloudclass
 
 aws ec2 run-instances --image-id ami-0447a12f28fddb066 --instance-type t2.micro --count 1 --subnet-id subnet-183f5454 --security-groups-ids sg-0173329149b94c49f --key-name keycloudclass
+
+-----------------------------------------------------------
+Everything ..every action is an event. - AWS track almost all the event.
+Event- Event history contains the activities taken by people, groups, or
+       AWS services in supported services in your AWS account.
+Service that does this is CloudTrail.
+
+Types of Storage:
+1. File System
+2. Block - Partition - Install O.S(We require ephemeral storage) in AWS - root storage
+3. Object - Just want to create file. Eg - GDrive, DropBox
+S3 - Simple Storage Service
+Openstack - Swift
+
+Secruity Group
+By-deafult:
+inbound/ingress traffic is not allowed
+in AWS context firewall is security group
+
+Analogy- Security Guard. Checks for ID and then Allow ortherwise doesnt allow to enter in the society.

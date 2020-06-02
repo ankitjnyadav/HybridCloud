@@ -141,3 +141,20 @@ inbound/ingress traffic is not allowed
 in AWS context firewall is security group
 
 Analogy- Security Guard. Checks for ID and then Allow ortherwise doesnt allow to enter in the society.
+
+
+-----------------------------------
+JSON Parser - JQ
+
+ay@Neelkanth:~/HybridComputing/AWS$ jq "" my.json 
+{
+  "name": "ay",
+  "id": 1
+}
+ay@Neelkanth:~/HybridComputing/AWS$ jq "." my.json 
+{
+  "name": "ay",
+  "id": 1
+}
+ay@Neelkanth:~/HybridComputing/AWS$ jq ".name" my.json 
+"ay"

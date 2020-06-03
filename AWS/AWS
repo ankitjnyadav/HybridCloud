@@ -158,3 +158,9 @@ ay@Neelkanth:~/HybridComputing/AWS$ jq "." my.json
 }
 ay@Neelkanth:~/HybridComputing/AWS$ jq ".name" my.json 
 "ay"
+
+
+S3
+Bucket
+Edge Location
+CDN - Content Delivery Network

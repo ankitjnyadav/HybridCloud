@@ -164,3 +164,7 @@ S3
 Bucket
 Edge Location
 CDN - Content Delivery Network
+
+CloudFront is the service used to achieve CDN from AWS.
+
+GlobalAccelarator is yet another service to leverage the strong and secure private network developed for communication between AZs and Edge nodes.

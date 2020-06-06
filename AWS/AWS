@@ -168,3 +168,13 @@ CDN - Content Delivery Network
 CloudFront is the service used to achieve CDN from AWS.
 
 GlobalAccelarator is yet another service to leverage the strong and secure private network developed for communication between AZs and Edge nodes.
+
+
+Docker inside the AMI
+
+Snapshot - Incremental Backup
+Point in time backup
+
+Copying Snapshot
+Creating volume out of Snapshot
+Changing the region of Snapshot

@@ -1,0 +1,31 @@
+3 Ways to interact To cloud
+1. Web
+2. API
+3. SDK
+
+Terraform - A single point of contact when it comes to multi/hybrid-cloud architecture/setup.
+
+It enables users to define and provision a datacenter infrastructure using a high-level configuration language known as Hashicorp Configuration Language (HCL), or optionally JSON.
+
+- Inra as a Code
+- Serves as a Documentation
+
+Once Downloaded ->
+add the program to env:
+alias terraform="path_to_terraform_executable"
+
+OneTime Setup:
+> terraform init
+
+How to Run?
+> terraform apply
+~ Apply complete! Resources: 0 added, 0 changed, 0 destroyed.
+
+Terraform uses Declarative language.
+Python, Go and other languages are imperative language.
+
+All the data is maintained in the terraform.tfstate file.
+
+To destroy all the infra created by terraform.
+> terraform destroy
+~ Destroy complete! Resources: 1 destroyed.

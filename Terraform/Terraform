@@ -29,3 +29,11 @@ All the data is maintained in the terraform.tfstate file.
 To destroy all the infra created by terraform.
 > terraform destroy
 ~ Destroy complete! Resources: 1 destroyed.
+
+
+Terraform works on concept of - Idempotent
+
+To print (like print()) anything in terraform ..
+output{
+    value= "resouce_name"
+}

@@ -37,3 +37,9 @@ To print (like print()) anything in terraform ..
 output{
     value= "resouce_name"
 }
+
+
+sudo ln -s /home/ay/Downloads/applications/terraform_0.12.26_linux_amd64/terraform /usr/sbin/terraform
+
+terraform apply -h
+terraform destory -auto-approve

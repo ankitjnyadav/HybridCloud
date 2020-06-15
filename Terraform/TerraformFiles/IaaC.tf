@@ -6,6 +6,8 @@
 }*/
 provider "aws" {
   region     = "ap-south-1"
+  access_key = "AKIAU66AWI3ZRWXA3SY4"
+  secret_key = "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"
 }
 
 variable "Default_AMI_id" {

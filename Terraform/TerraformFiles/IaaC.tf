@@ -1,6 +1,6 @@
 provider "aws" {
   region     = "ap-south-1"
-  profile    =  "terraform"
+  profile    =  "jenkins"
 }
 
 variable "Default_AMI_id" {

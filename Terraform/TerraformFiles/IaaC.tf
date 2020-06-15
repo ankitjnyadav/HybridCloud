@@ -4,7 +4,9 @@
   shared_credentials_file = "$HOME/.aws/credentials"
   profile                 = "jenkins"
 }*/
-provider "aws" {}
+provider "aws" {
+  region     = "ap-south-1"
+}
 
 variable "Default_AMI_id" {
   type    = string

@@ -6,7 +6,9 @@
 }*/
 provider "aws" {
   region     = "ap-south-1"
-  profile = "ankit"
+  access_key = "AKIAU66AWI3Z34YCQNKE"
+  secret_key = "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"
+
 }
 
 variable "Default_AMI_id" {
@@ -167,15 +169,10 @@ resource "aws_s3_bucket" "Bucket_Provisioning" {
   }
 }
 
-
-locals {
-  s3_origin_id = "myS3Origin"
-}
-
 resource "aws_cloudfront_distribution" "s3_distribution" {
   origin {
-    domain_name = aws_s3_bucket.Bucket_Provisioning.bucket_regional_domain_name
-    origin_id   = local.s3_origin_id
+    domain_name = "ankitjnyadav-tf-github-bucket.s3.amazonaws.com"
+    origin_id   = "s3-ankitjnyadav-tf-github-bucket"
     custom_origin_config {
             http_port = 80
             https_port = 80
@@ -187,7 +184,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
     default_cache_behavior {
         allowed_methods = ["GET", "HEAD", "OPTIONS", "PATCH", "POST", "PUT"]
         cached_methods = ["GET", "HEAD"]
-        target_origin_id = local.s3_origin_id
+        target_origin_id = aws_s3_bucket.Bucket_Provisioning.id
         forwarded_values {
             query_string = false
             cookies {

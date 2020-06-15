@@ -1,9 +1,10 @@
-provider "aws" {
+/*provider "aws" {
   region     = "ap-south-1"
   //profile    =  "terraform"
   shared_credentials_file = "$HOME/.aws/credentials"
   profile                 = "jenkins"
-}
+}*/
+provider "aws" {}
 
 variable "Default_AMI_id" {
   type    = string

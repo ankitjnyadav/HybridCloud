@@ -6,8 +6,7 @@
 }*/
 provider "aws" {
   region     = "ap-south-1"
-  access_key = "AKIAU66AWI3ZRWXA3SY4"
-  secret_key = "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"
+  profile = "ankit"
 }
 
 variable "Default_AMI_id" {
@@ -116,12 +115,14 @@ resource "null_resource" "MyPublicIpRedirection" {
   }
 }
 
+/*
 resource "null_resource" "OpenTheWebSite" {
   depends_on=[null_resource.OpenTheWebSite1]
   provisioner "local-exec" {
     command = "firefox ${aws_instance.TerraformAMI_Assignment1.public_ip}"
   }
 }
+*/
 
 resource "aws_ebs_volume" "Terra_EBS3" {
   availability_zone = aws_instance.TerraformAMI_Assignment1.availability_zone

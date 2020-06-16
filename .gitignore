@@ -1,2 +1,3 @@
 /Terraform/TerraformFiles/.terraform/
 /Terraform/TerraformFiles/Tf_Private_Key.pem
+/Kubernetes/.terraform

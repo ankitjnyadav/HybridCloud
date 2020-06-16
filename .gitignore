@@ -1,1 +1,2 @@
-/Terraform/1/.terraform/plugins/linux_amd64/terraform-provider-aws_v2.65.0_x4
+/Terraform/TerraformFiles/.terraform/
+/Terraform/TerraformFiles/Tf_Private_Key.pem

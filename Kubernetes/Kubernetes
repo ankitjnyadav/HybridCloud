@@ -1,0 +1,8 @@
+Network - Overlay Setup
+One Pod to other pod has connectivity
+
+
+
+
+vi /root/.bashrc
+exit from vi- Esc + :q!

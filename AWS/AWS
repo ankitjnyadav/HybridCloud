@@ -183,3 +183,16 @@ Changing the region of Snapshot
 
 -------------------------------------
 Elastic Kubernetes Service (Amazon EKS)
+-------------------------------------
+
+Elastic File System (EFS) - NFS protocol
+Whereas S3 works on HTTP protocol
+
+iSCSI protocol
+iSCSI stands for Internet Small Computer Systems Interface. iSCSI is a transport layer protocol that works on top of the Transport Control Protocol (TCP).
+It enables block-level SCSI data transport between the iSCSI initiator and the storage target over TCP/IP networks.
+
+
+Fibre Channel
+Fibre Channel is a high-speed networking technology primarily used for transmitting data among data centers, computer servers, switches and storage at data rates of up to 128 Gbps.
+

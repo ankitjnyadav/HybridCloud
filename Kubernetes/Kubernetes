@@ -6,3 +6,21 @@ One Pod to other pod has connectivity
 
 vi /root/.bashrc
 exit from vi- Esc + :q!
+
+
+PVC
+
+-------------------------------
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: db-pvc1
+  labels:
+    name: dbpvc1
+spec:
+  accessModes:
+   - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+-------------------------------

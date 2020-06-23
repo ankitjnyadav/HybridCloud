@@ -196,3 +196,22 @@ It enables block-level SCSI data transport between the iSCSI initiator and the s
 Fibre Channel
 Fibre Channel is a high-speed networking technology primarily used for transmitting data among data centers, computer servers, switches and storage at data rates of up to 128 Gbps.
 
+
+ELB
+Elastic Load Balancer
+
+Service in K8s is like load balancer
+
+Private Subnet - Nobody can access EC2 outside AWS Data centers
+
+Demilitarized Zone (DMZ)
+
+A DMZ, short for demilitarized zone, is a network (physical or logical) used to connect hosts that provide an interface to an untrusted external network – usually the internet – while keeping the internal,
+private network – usually the corporate network – separated and isolated form the external network.
+
+As systems that are most vulnerable to attack are those that provide services to users outside of the local area network, such as e-mail, Web and Domain Name System (DNS) servers,
+they are ‘quarantined’ inside a DMZ, from where they have limited access to the private network. Hosts in the DMZ can communicate with both the internal and external network,
+but communications with internal network hosts is tightly restricted.
+
+The DMZ is isolated using a security gateway (i.e. firewall) to filter traffic between the DMZ and the private network. The DMZ itself also has a security gateway in front of it to filter incoming traffic from the external network.
+The ultimate goal of a DMZ is to allow access to resources from untrusted networks while keeping the private network secured. Resources commonly placed in the DMZ include, Web servers, Mail servers, FTP servers, and VoIP servers.

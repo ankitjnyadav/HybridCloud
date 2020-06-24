@@ -24,3 +24,38 @@ spec:
     requests:
       storage: 1Gi
 -------------------------------
+
+
+
+Multi Node Setup
+----------------
+
+Bridge Adaptor - Local + Interenet connection
+NAT  Adaptor - Interenet connection
+Host Only Adaptor - Local connection
+
+
+On Master
+Kube API Server is required
+Docker Engine
+Kublet program
+
+DB - Service
+etcd is a distributed key-value store.
+In fact, etcd is the primary datastore of Kubernetes;
+storing and replicating all Kubernetes cluster state.
+As a critical component of a Kubernetes cluster having
+a reliable automated approach to its configuration and management is imperative.
+
+For Master/Slave
+[Refer- https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/]
+1. We need OS
+2. Yum needs to be configured
+3. Need docker
+4. Kubelet
+5. Minikube/EKS/kuveadm
+6. Firewall - disabled
+7. Disable SELinux - setenforce 0
+8. Change cgroup to systemctld
+9. Disable cgroup
+

@@ -1,0 +1,36 @@
+Private Cloud
+
+Installed Openstack using packstack
+Packstack is the installer
+
+Static
+IP
+Network
+DNS Client
+Router (Gateway)
+
+
+cd /etc/sysconfig/network-scripts
+
+ifcfg-enp0s3
+
+BOOTPROTO="static"
+
+IPADDR=12.168.0..156
+NETMASK=255.255.255.0
+GATEWAY=192.168.0.1
+DNS1=192.168.0.1
+
+
+
+
+Glance - is repository of Images
+Redhat Windows Fedora anything
+
+Login to OpenStack - CLI
+>ls
+>vi keystonerc_demo
+>source keystonerc_demo
+
+glance image-list
+glace image-show <image-id>

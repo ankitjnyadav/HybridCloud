@@ -34,3 +34,20 @@ Login to OpenStack - CLI
 
 glance image-list
 glace image-show <image-id>
+
+
+
+What is Kernel ?
+Controls the complete hardware (bare metal example)
+
+A software in between
+Install the OS on top of this software - Hypervisor
+
+
+Virtualization
+Type 1                              Type 2
+Hyp. On top of physical h/w         Hyp. On top of an OS
+Hardware virtualization             Software virtualization
+Eg: VMware ESXi                     Eg: Virtualbox
+Windows: Hyper-V
+Linux:   KVM

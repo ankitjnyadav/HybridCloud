@@ -1,0 +1,23 @@
+Kubernetes
+--
+1. API Server
+2. Controller
+3. Scheduler
+--
+4. Kubelet
+
+
+EKS ctl
+https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html
+
+
+EKS
+1. Web UI
+2. CLI
+ -  EKS
+ -  eksctl
+3. API
+
+
+Elastic Load Balancer - https://aws.amazon.com/elasticloadbalancing/
+

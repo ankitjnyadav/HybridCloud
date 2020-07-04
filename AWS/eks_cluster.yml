@@ -1,0 +1,13 @@
+apiVersion: eksctl.io/v1alph5
+kind: ClusterConfig
+
+metadata: aycluster
+region:  ap-south-1
+
+nodeGroups:
+  - name:  ng1
+    desiredCapacity: 2
+    instanceType: t2.micro
+  - name:  ng2
+    desiredCapacity: 1
+    instanceType: t2.small

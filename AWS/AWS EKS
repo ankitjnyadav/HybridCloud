@@ -21,3 +21,50 @@ EKS
 
 Elastic Load Balancer - https://aws.amazon.com/elasticloadbalancing/
 
+
+aws eks update-config
+
+
+AWS ENI Limits
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html
+
+Thats why we can launch only 4 pods in t2.micro
+
+And in t2.small
+3 Network card and 4 IPs each. Hence 12 IPs. So 12 Pods
+
+Server Less Cluster - fargate
+https://aws.amazon.com/fargate/
+
+fargateProfiles:
+    - name: fargate-default
+
+
+To check namespaces
+kubectl get ns
+
+To check pods running under specific namespace
+kubectl get pods -n kube-system
+
+    selectors:
+    - namespace: kube-system
+
+
+What is Helm?
+
+Helm helps you manage Kubernetes applications — Helm Charts help you define,
+install, and upgrade even the most complex Kubernetes application.
+
+
+Initialize Helm
+helm init
+
+To check the repository list
+helm repo list
+
+To search in the repo list
+helm search
+
+
+Serveless configuration
+

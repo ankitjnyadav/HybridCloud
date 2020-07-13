@@ -51,3 +51,13 @@ Hardware virtualization             Software virtualization
 Eg: VMware ESXi                     Eg: Virtualbox
 Windows: Hyper-V
 Linux:   KVM
+
+
+Power/Role - All Permisions - Admin Role
+
+_memeber_ power == Demo User
+
+Project - To Describe the Quotas
+Project is a way to create multi-tenancy
+
+ip netns - shows all the network namespaces

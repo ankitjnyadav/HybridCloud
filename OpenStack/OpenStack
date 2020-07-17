@@ -61,3 +61,7 @@ Project - To Describe the Quotas
 Project is a way to create multi-tenancy
 
 ip netns - shows all the network namespaces
+
+
+Can only create public IP using admin account
+External = Yes are public network

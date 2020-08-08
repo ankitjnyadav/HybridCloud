@@ -215,3 +215,75 @@ but communications with internal network hosts is tightly restricted.
 
 The DMZ is isolated using a security gateway (i.e. firewall) to filter traffic between the DMZ and the private network. The DMZ itself also has a security gateway in front of it to filter incoming traffic from the external network.
 The ultimate goal of a DMZ is to allow access to resources from untrusted networks while keeping the private network secured. Resources commonly placed in the DMZ include, Web servers, Mail servers, FTP servers, and VoIP servers.
+
+
+
+
+
+Load Balancer
+Elastic Load Balancer
+Elastic - As and when requirement comes they adjust/
+
+
+Benefits:
+1. Only One IP
+2. Private network hence no one can do SSH
+3. Disaster Recovery 
+
+If any node is down, Load Balancer marks those nodes as "unhealthy"
+
+
+Three types of Load Balancers offered by AWS:
+CLB - Classic LB
+ALB - Applicaiton LB
+NLB - Network LB
+
+
+Cloud-init
+runs before os boots
+
+We can provide to meta-data server
+
+Congigure Instance --> Advance Details
+Metadata accessible --> Enabled
+
+------------------------------------
+Cloud Init Script
+------------------------------------
+#!/bin/bash
+yum install httpd php -y
+echo '<pre> <?php print(`ifonfig`) ?> </pre>' > /var/www/html/myip.php
+echo 'Welcome'> /var/www/html/index.html
+
+systemctl enable httpd --now
+
+
+------------------------------------
+		CLB
+------------------------------------
+Has the capability to connect with the clients over HTTP
+
+Port program are typically listeners 
+Allow people from Port 8080
+Protocol - HTTP
+
+What is a Reverse Proxy?
+
+A reverse proxy is a server that sits in front of web servers and forwards client (e.g. web browser) requests to those web servers. Reverse proxies are typically implemented to help increase security, performance, and reliability. In order to better understand how a reverse proxy works and the benefits it can provide, let’s first define what a proxy server is.
+What’s a proxy server?
+
+A forward proxy, often called a proxy, proxy server, or web proxy, is a server that sits in front of a group of client machines. When those computers make requests to sites and services on the Internet, the proxy server intercepts those requests and then communicates with web servers on behalf of those clients, like a middleman.
+
+For example, let’s name 3 computers involved in a typical forward proxy communication:
+
+    A: This is a user’s home computer
+    B: This is a forward proxy server
+    C: This is a website’s origin server (where the website data is stored)
+
+
+
+
+
+
+
+
